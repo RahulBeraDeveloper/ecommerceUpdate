@@ -1,0 +1,18 @@
+.nav-link-custom {
+    position: relative;
+  }
+  
+  .nav-link-custom:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    background-color: #E8C5E5; /* Bootstrap primary color */
+  }
+  
+  .nav-link-custom:hover {
+    text-decoration: none;
+  }
+  

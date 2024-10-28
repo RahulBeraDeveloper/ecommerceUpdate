@@ -1,0 +1,12 @@
+
+  .category-alert {
+  border-radius: 0.5rem; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  background-color: #f8f9fa; /* Light background color */
+  margin-bottom: 1rem; /* Space between alerts */
+}
+
+.category-alert:hover {
+  background-color: #d1e7dd; /* Light deep color on hover */
+  cursor: pointer; /* Pointer on hover */
+}
