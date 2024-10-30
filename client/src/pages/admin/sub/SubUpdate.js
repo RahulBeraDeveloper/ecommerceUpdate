@@ -176,13 +176,13 @@ const SubUpdate = () => {
         <div className="col-md-2">
           <AdminNav />
         </div>
-        <div className="col">
+        <div className="col-md-10  responsive-margin">
           {loading ? (
             <h4 className="text-danger">Loading..</h4>
           ) : (
             <h4>Update Sub Category</h4>
           )}
-
+       <div className="card shadow p-3 mb-6 mt-2  bg-white rounded" style={{ borderRadius: '10px'}}>
           <div className="form-group">
             <label>Parent category</label>
             <select
@@ -207,6 +207,7 @@ const SubUpdate = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };

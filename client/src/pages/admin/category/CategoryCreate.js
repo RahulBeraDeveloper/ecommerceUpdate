@@ -85,12 +85,16 @@ const CategoryCreate = () => {
         <div className="col-md-2">
           <AdminNav />
         </div>
-        <div className="col">
+ 
+        <div className="col-md-10  responsive-margin" >
+     
           {loading ? (
             <h4 className="text-danger">Loading..</h4>
           ) : (
             <h4>Create category</h4>
           )}
+
+   <div className="card shadow p-3 mb-6 mt-2  bg-white rounded" style={{ borderRadius: '10px'}}>
           <CategoryForm handleSubmit={handleSubmit} name={name} setName={setName} />
 
           <LocalSearch keyword={keyword} setKeyword={setKeyword} />
@@ -107,6 +111,7 @@ const CategoryCreate = () => {
             //     </span>
             //   </Link>
             // </div>
+         
             <div className="alert alert-secondary category-alert d-flex justify-content-between align-items-center" key={c._id}>
               <span className="flex-grow-1">{c.name}</span>
               <div>
@@ -119,10 +124,12 @@ const CategoryCreate = () => {
                   </span>
                 </Link>
               </div>
+       
             </div>
 
 
           ))}
+        </div>
         </div>
       </div>
     </div>

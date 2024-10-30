@@ -6,7 +6,7 @@ import { getCategory, updateCategory } from "../../../functions/category";
 import { useParams, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import CategoryForm from '../../../components/forms/CategoryForm';
-
+import './CategoryUpdate.css'
 const CategoryUpdate = () => {
   const { user } = useSelector((state) => ({ ...state }));
   const { slug } = useParams();
@@ -62,14 +62,16 @@ const CategoryUpdate = () => {
         <div className="col-md-2">
           <AdminNav />
         </div>
-        <div className="col">
+        <div className="col-md-10 responsive-margin">
           {loading ? (
             <h4 className="text-danger">Loading..</h4>
           ) : (
             <h4>Update category</h4>
           )}
+              <div className="card shadow p-3 mb-5  bg-white rounded " style={{ borderRadius: '10px'}}>
           <CategoryForm handleSubmit={handleSubmit} name ={name} setName={setName}/>
           <hr />
+        </div>
         </div>
       </div>
     </div>

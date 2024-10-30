@@ -1,0 +1,11 @@
+.responsive-margin {
+    margin-left: -5%;
+  }
+  
+  @media (max-width: 768px) {
+    /* For tablets and smaller screens */
+    .responsive-margin {
+      margin-left: 1%;
+    }
+  }
+  
